@@ -19,7 +19,6 @@ class ConcertDetailActivity : AppCompatActivity() {
         val name = findViewById<TextView>(R.id.tvName)
         val desc = findViewById<TextView>(R.id.tvDesc)
 
-        // 🔥 TAMBAHAN INI
         val location = findViewById<TextView>(R.id.tvLocation)
         val date = findViewById<TextView>(R.id.tvDate)
 
@@ -28,7 +27,6 @@ class ConcertDetailActivity : AppCompatActivity() {
             name.text = data.name
             desc.text = data.description
 
-            // 🔥 INI YANG BIKIN UI BERUBAH
             location.text = "📍 ${data.location}"
             date.text = "🕒 ${data.date}"
         }
