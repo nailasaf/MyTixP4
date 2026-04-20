@@ -11,18 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Ambil Card dari XML
         val cardExo = findViewById<CardView>(R.id.cardExo)
         val cardBts = findViewById<CardView>(R.id.cardBts)
 
-        // Klik EXO
         cardExo.setOnClickListener {
             val intent = Intent(this, ConcertDetailActivity::class.java)
             intent.putExtra("ID", 1)
             startActivity(intent)
         }
 
-        // Klik BTS
         cardBts.setOnClickListener {
             val intent = Intent(this, ConcertDetailActivity::class.java)
             intent.putExtra("ID", 2)
